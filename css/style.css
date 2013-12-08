@@ -1,0 +1,428 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Base styling */
+body {
+	font-size: 100%;
+	font-family: 'Droid Serif', serif;
+	font-weight: normal;
+	color: #222;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Header and Nav Styling */
+
+
+header h1 a {
+	text-decoration: none;
+	color: #555;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #555;
+	display: block;
+	padding: .2em .4em;
+}
+
+nav li:hover a {
+	background: #777;
+	color: #fff;
+}
+
+nav li.selected a {
+	background: #555;
+	color: #fff;
+}
+
+/* Footer Styling */
+footer {
+	text-align: center;
+	padding: 1em;
+}
+
+/* Page Styling */
+section {
+	overflow: hidden;
+	margin: 1em auto;
+}
+
+section h2 {
+	font-weight: bold;
+	font-size: 2.2em;
+	line-height: 1.5;
+}
+
+section p {
+	font-size: 1.2em;
+	line-height: 1.2;
+}
+
+/* Portfolio Styling */
+.project {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid #555;
+}
+
+.project h3 {
+	font-size: 1.8em;
+}
+
+.project img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.project .description {
+	position: absolute;
+	bottom: -100%;
+	background: rgba(100,100,100,.8);
+	color: #fff;
+	padding: .4em;
+	visibility: hidden;
+	transition: all .25s ease-in-out;
+}
+
+.project:hover .description {
+	bottom: 0;
+	visibility: visible;
+}
+
+/* Contact Styling */
+#contact {
+	max-width: 800px;
+	width: 100%;
+	margin: .4em auto;
+}
+
+#contact h2 {
+	text-align: center;
+}
+
+#contact textarea,
+#contact input {
+	width: 85%;
+	outline: none;
+	border: 2px solid #777;
+	padding: .5em;
+	border-radius: .2em;
+	font-size: 1.2em;
+	display: block;
+	margin: .4em auto;
+}
+
+#contact textarea {
+	resize: none;
+}
+
+#contact button {
+	border: 0;
+	outline: none;
+	margin: 0;
+	display: block;
+	background: #cfcfcf;
+	font-size: 1.6em;
+	padding: .5em;
+	border-radius: .2em;
+	margin: 0 auto;
+	width: 10em;
+}
+
+.social {
+	text-align: center;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social a {
+	display: inline-block;
+	height: 64px;
+	width: 64px;
+	background-size: 64px 64px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 5px;
+}
+
+.social .twitter {
+	background-color: #555;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACaklEQVR42u3aTUhUURjGcSemhhJNMKiMgkKwFKyBUsHIQkxs0yI30aamZqe0CRRqoTRgtOgDpIVuRQqhEqyNbUQKhAhCB6E20XebMgtxmnT6uxuoaZq5Z857br4P/GA2c+A+zJ17OO8tSqVSq5oWoAVoAVqAFqAFaAFagBagBWgBWoAWoAW4owS1OIwGbFstBVThFl4jPfMYx4kM3yvDMQRtFnAUuw1efBTzyJYRlKEI1biId7hk8xewBtOYxSYDF9+JXBLHUySxkhmEbBZQiZ9YyRS2erj4eiwh38SxGQHUIGijgDakZxb78lzrEfLNK3SgF9OIIGCjgPbU7/mKszmuswfLyDc/0j5ft3kLNCNT7qHmH9eJwESu2n4MVmABmbKAflRnWacXXpJAp9Q+YAzZsoj7OImKP6zRDS95I7kRakQumcMEruEcWhAzUMAGyZ1gDyTzAkGJAlpxHjtwA0lI5InULdCetkd/hkVIZFiqgJ1IQjpdkn+C45BOk2QBhyCZTyiVPg+4DKkMuXIg0geJtLp0InQQDzAHG4ljrSsF7McZRPEQSyh0Ii6dCdbCZmYQcu1QtE/23pcvYB3GUOgMuHwsvh4DKFSeo8QPc4FmjOA9vhnc9FT5bTBSjCsGngqf0eC3ydBe3MGygQOPOr/MBkvRhttIwGsmscu14WgAB3AapxBFDKN4CxNJIIaQq9PhLejBF5jOXYT9Mh4vRwem4CUfMYh6P78fEMYFjOIlvv9lkvMBj3ETx1H+v70gEcJ2hNGEFhxBHSqxUd8Q0QK0AC1AC9ACtAAtQAvQArQALUAL0AK0AFG/ADVE276ItLozAAAAAElFTkSuQmCC);
+}
+
+.social .github {
+	background-color: #555;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADKklEQVR42u3aTUgUYQCH8bFISyMT2/zaMjpFRWESZCQrFgQVS2aaIVl0LNKLEHixgyVSFIGHvjzkMSiKvOT2cSi2wJIOJUVZEZilku5S2mplz0FhWOYdZ3Pnndl6//A7qXN4mJ1dd0abnJz8r6kAKoAKoAKoACqACqACqAAqgAogxRIUoRr1ODGlHtUogudfC5CPWnRiEDNtCAHUIT+RA6zBZYTwtwujDWsTKUAamjGKeG0MLVjo9gAF6IZde45CtwbwIwS7F8ZutwUoxwRk7Scq3RLAhx+QvQhKnQ6Qh0+IXi+CGMFsF0IQvYjeZyxzMsAtGG2bLtAxvEGse4s6eKGhFEbrcCpAOYwWNvg0twgn0YFGVMGHwik+7EMjOtCMxdB0Mk3OqErZAVLQA6O9Rwq0OJuHXhjtNeZLDEBx8fqQakOABfgI0fbLDHAXZltny0dr8z2QFWAFIhDtA/JsCJCDdxBtHCtlBDgIs+2AZpPtMNthGQEuQrQn0GwWhGhtMgI8gmgNEgIch2iPbQ4w9VYknl9CgF1g4rdgOwOkYwCibZUQoASiDSHDzgCZ+Gr5Aij/QjgCj5NnwCEJAWqsnwHyrwFnJARoce4aADyEaM8kBOiCaEF5nwPE2wTNJhvxG6JdkRGgBma7b2OAgBs+CeYjArOdlvXal/+/ABDATGuHF9oseXEVzMKZJylABfRrhR/XoN8AzqJY9w1PkuCY+p9lwIdzGISVVckMkIyXUTcsCqChFkbrRyeyoAlk4R6+IJa9Qoq8AMAe6DeGzdDQDqO1WjjuecS6Cqe+Fb4J/V4gGem4g+htgGaO34ltt538WjwXfdCvHBrmogxNaEAJ5lg4Zja+wcr64XUuAFCMMUyvBxmzOJ7H4g2VCErccm+wDOOYXhe2IElwlTezFCGYbQJ73XZ3eCeGDW5n38B1BOCJQ4AQ/G59PmA9nsJov5Br4RhZCMNo3Shw+xMiqWgyuJCNWrxg5Rj87XecQloiPSO0ChcwrDsDsi2+BCZ03/BcwupEfkrMiyOosfg2mIQDOIrl6kFJFUAFUAFUABVABVABVAAVQAVQAezwB0WFfpUw1et7AAAAAElFTkSuQmCC);
+}
+
+.social .linkedin {
+	background-color: #555;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB80lEQVR42u3ZPWhTURiH8QMxxboYDGrBdggmJsYUYxaHdi0EHP2YDF2tH4vSqaIIhU6WUjM4RIR2KGTJILjGQZzETRxcBEMGC42mECKJxGeUSzwvCZrk3vP+4bfl3AsPCbkkptfrOU0DaAANoAE0gAbQABpAA2gADTCU40gghimXAsyihDo6aOMTVhEKeoAz+Iy/7UXQA5QgbSmoAabxFdKKQQ1wAg1IKwc1wBF8hLT1YAYA7sO2n0gFOUAYu+i3FgquPAhdwx7eoYqnmNdHYQ2gAf6lCHLI4woWMDfuADdQsShjxnMmhoog/8frs3iJOrw7xFvcwvQ4AqxDWsJzJgtp92DwAG0wcR+QG3WAR7Ctg7OeMxlIK4AIA6+By5MeIA1pr9HBMPuC6CQHOI//vU3XA/zA6UkNkMIge4MNPEFlgI/Gst8DNHEVxmMR3yBtx+8BrlvuexPS3vs5QFW471HUYFsNx/waYA1G8Aq2HSDq12+B2zCC57DtO076NcAdGMG26wGe+TVA2vUAF1wPkNEAGkADOB1g3vUAFzWA4wGyQQrwGLb9QtxzJgdpd2EERdjWHEWAh+hatPq8Ay6hK1iBEWwJ19gfRYAokhbnEO7zY0ZSEIERnBKuEUdI/xzVABpAA2gADaABNIAG0AAaQANIfgPNw9yzcni3awAAAABJRU5ErkJggg==);
+
+}
+
+/* Skills Styling */
+.skill-block {
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	margin: .4em auto;
+}
+
+.skill-block ul {
+	list-style: circle;
+	margin: 0;
+	padding-left: 2em;
+}
+
+
+/* Responsivenss */
+
+/*
+>= 1200
+	full nav
+	3 projects/row
+	descriptions hover
+
+1024 < x < 1200px
+	full nav
+	3 projects/row
+	descriptions hover
+
+768px <= x <= 1024
+	collapsed nav
+	3 projects/row
+	descriptions block
+
+480 px < x < 768px
+	collapsed nav
+	2 projects/row
+	descriptions block
+
+x <= 480px
+	collapsed nav
+	1 project/row
+	descriptions block
+*/
+
+
+@media (min-width: 1025px) {
+	header {
+		border-bottom: 4px solid #555;
+		padding: .5em 0;
+	}
+
+	header h1,
+	header nav,
+	nav li {
+		display: inline-block !important;
+	}
+
+	header h1 {
+		font-size: 3.5em;
+	}
+
+	nav .mobile-nav button {
+		display: none;
+	}
+
+}
+
+@media(max-width: 1024px) {
+	header {
+		border-bottom: none;
+	}
+
+	header h1,
+	header nav {
+		display: block;
+	}
+
+	header h1 {
+		font-size: 2.5em;
+	}
+
+	nav {
+		position: relative;
+	}
+
+	nav .mobile-nav button{
+		position: absolute;
+		right: 3px;
+		top: 3px;
+		border: 0;
+		outline: none;
+		height: 30px;
+		width: 30px;
+		margin: 0;
+		display: block;
+		background: #cfcfcf;
+	}
+
+	nav .selected {
+		display: block;
+		min-height: 36px;
+		background: #555;
+	}
+
+	nav li:not(.selected) {
+		display: none;
+	}
+
+	nav li a {
+		font-size: 1.5em;
+	}
+
+	.project {
+		margin: .5em auto;
+		overflow: hidden;
+	}
+
+	.project .description {
+		position: static;
+		display: block;
+		visibility: visible;
+		overflow: hidden;
+		height: 205px;
+	}	
+}
+
+@media (min-width: 767px) {
+	section .project {
+		width: 32%;
+		margin: .5% .5% 0 0;
+	}
+}
+
+@media(max-width: 767px) {
+	.project .description {
+		height: auto;
+	}
+
+	#contact button {
+		width: 91%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
